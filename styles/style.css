@@ -91,7 +91,7 @@ h1 {
     cursor: pointer;
 }
 .btn-forget {
-    background-color: var(--bege2);
+    background-color: white;
 }
 .btn:hover {
     background-color: var(--azul1);
