@@ -17,16 +17,18 @@
                 <p>Insira os dados para realizar o login.</p>
                 <form action="login.php" method="post">
                     <p>
-                        <label for="iusuario">Usuário: </label>
-                        <input type="text" name="usuario" id="iusuario" required placeholder="email@dominio.com" autocomplete="username">
+                        <label for="iusuario">Usuário </label><br>
+                        <input class="input-camp" type="text" name="usuario" id="iusuario" required placeholder="email@dominio.com" autocomplete="username">
                     </p>
                     <p>
-                        <label for="isenha">Senha: </label>
-                        <input type="password" name="senha" id="isenha" required maxlength="20" autocomplete="current-password">
+                        <label for="isenha">Senha </label><br>
+                        <input class="input-camp" type="password" name="senha" id="isenha" required maxlength="20" autocomplete="current-password">
                     </p>
-                    <p>
-                        <input type="submit" value="Acessar">
-                        <input type="reset" value="Limpar">
+                    <p id="cont-btn">
+                        <div id="cont-inpt">
+                            <input class="btn" type="submit" value="Entrar">
+                            <input class="btn btn-forget" type="reset" value="Esqueci minha senha">
+                        </div>
                     </p>
                 </form>
             </div>

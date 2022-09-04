@@ -25,7 +25,7 @@ main {
 #login {
     background-color: var(--azul1);
     width: 300px;
-    height: 500px;
+    height: 520px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -33,6 +33,7 @@ main {
     transform: translate(-50%,-50%);
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    color: var(--bege1);
 }
 #imgLogin {
     background: var(--bege2) url(../images/back-login.jpg) no-repeat;
@@ -44,4 +45,51 @@ main {
 #formulario {
     display: block;
     padding: 10px;
+}
+form {
+    padding-top: 15px;
+    width: 250px;
+    margin: auto;
+}
+p, h1 {
+    padding-bottom: 3px;
+}
+h1 {
+    text-align: center;
+}
+.input-camp {
+    padding: 2px;
+    height: 30px;
+    width: 100%;
+}
+#cont-btn {
+    width: 150px;
+    margin-top: 20px;    
+}
+#cont-inpt {
+    width: 70%;
+    margin: auto;
+}
+.btn {
+    transition: .3s;
+    width: 100%;
+    margin-bottom: 4px;
+    color: #042836;
+    background-color: #7e9a9e;
+    border: 1.5px solid var(--bege2);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-forget {
+    background-color: var(--bege2);
+}
+.btn:hover {
+    background-color: var(--azul1);
+    color: var(--bege2);
+    
+}
+label {
+    font-weight: 500;
 }
