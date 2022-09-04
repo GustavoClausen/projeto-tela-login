@@ -10,14 +10,24 @@
 <body>
     <main>
         <section id="login">
-            <div id="imgLogin">
-                <img src="images/back-login.jpg" alt="Imagem de background azul">
-            </div>
-            <div>
+            <div id="imgLogin"></div>
+            <div id="formulario">
                 <h1>Login</h1>
-                <p>Por favor, insira os dados para realizar o login.</p>
+                <p>Seja bem vindo(a)!</p>
+                <p>Insira os dados para realizar o login.</p>
                 <form action="login.php" method="post">
-                    
+                    <p>
+                        <label for="iusuario">Usuário: </label>
+                        <input type="text" name="usuario" id="iusuario" required placeholder="email@dominio.com" autocomplete="username">
+                    </p>
+                    <p>
+                        <label for="isenha">Senha: </label>
+                        <input type="password" name="senha" id="isenha" required maxlength="20" autocomplete="current-password">
+                    </p>
+                    <p>
+                        <input type="submit" value="Acessar">
+                        <input type="reset" value="Limpar">
+                    </p>
                 </form>
             </div>
         </section>
