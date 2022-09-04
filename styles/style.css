@@ -25,7 +25,7 @@ main {
 #login {
     background-color: var(--azul1);
     width: 300px;
-    height: 520px;
+    height: 510px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -33,7 +33,7 @@ main {
     transform: translate(-50%,-50%);
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    color: var(--bege1);
+    color: white;
 }
 #imgLogin {
     background: var(--bege2) url(../images/back-login.jpg) no-repeat;
@@ -51,29 +51,37 @@ form {
     width: 250px;
     margin: auto;
 }
-p, h1 {
-    padding-bottom: 3px;
-}
 h1 {
     text-align: center;
+    margin: 10px;
 }
 .input-camp {
-    padding: 2px;
+    padding: 8px;
     height: 30px;
-    width: 100%;
+    border-radius: 4px;
+    border: 1px solid white;
+    background-color: white;
+    width: 85%;
+    display: inline-block;
+}
+.box-input {
+    margin-bottom: 6px;
+}
+.camp-msg {
+    margin-bottom: 10px;
 }
 #cont-btn {
     width: 150px;
-    margin-top: 20px;    
+    margin-top: 20px;
 }
 #cont-inpt {
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
 .btn {
     transition: .3s;
     width: 100%;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     color: #042836;
     background-color: #7e9a9e;
     border: 1.5px solid var(--bege2);
@@ -87,9 +95,13 @@ h1 {
 }
 .btn:hover {
     background-color: var(--azul1);
-    color: var(--bege2);
-    
+    color: var(--bege2);  
 }
 label {
-    font-weight: 500;
+    display: inline-block;
+    width: 13%;
+}
+span{
+    position: relative;
+    vertical-align: middle;
 }

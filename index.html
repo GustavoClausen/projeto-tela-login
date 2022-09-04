@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Tela de login</title>
 </head>
 <body>
@@ -12,22 +14,32 @@
         <section id="login">
             <div id="imgLogin"></div>
             <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem vindo(a)!</p>
-                <p>Insira os dados para realizar o login.</p>
+                <div class="camp-msg">
+                    <h1>Login</h1>
+                    <p>Seja bem vindo(a)!</p>
+                    <p>Insira os dados para realizar o login.</p>
+                </div>
                 <form action="login.php" method="post">
-                    <p>
-                        <label for="iusuario">Usuário </label><br>
-                        <input class="input-camp" type="text" name="usuario" id="iusuario" required placeholder="email@dominio.com" autocomplete="username">
+                    <p class="box-input">
+                        <label for="iusuario">
+                            <span class="material-symbols-outlined">
+                                account_box
+                            </span>
+                        </label>
+                        <input class="input-camp" type="text" name="usuario" id="iusuario" required placeholder="Usuário" autocomplete="username">
                     </p>
-                    <p>
-                        <label for="isenha">Senha </label><br>
-                        <input class="input-camp" type="password" name="senha" id="isenha" required maxlength="20" autocomplete="current-password">
+                    <p class="box-input">
+                        <label for="isenha">
+                            <span class="material-symbols-outlined">
+                                password
+                            </span>
+                        </label>
+                        <input class="input-camp" type="password" name="senha" id="isenha" required maxlength="20" autocomplete="current-password" placeholder="Senha">
                     </p>
                     <p id="cont-btn">
                         <div id="cont-inpt">
                             <input class="btn" type="submit" value="Entrar">
-                            <input class="btn btn-forget" type="reset" value="Esqueci minha senha">
+                            <input class="btn btn-forget" type="reset" value="Esqueci minha senha &#9993;">
                         </div>
                     </p>
                 </form>
